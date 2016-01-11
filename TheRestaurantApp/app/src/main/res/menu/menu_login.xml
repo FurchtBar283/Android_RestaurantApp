@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.michael.therestaurantapp.LoginActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_order"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/call_waiter"
+        android:orderInCategory="100"
+        android:title="@string/action_waiter"
+        app:showAsAction="never"
+        />
+</menu>

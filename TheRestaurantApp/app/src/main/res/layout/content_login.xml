@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="de.michael.therestaurantapp.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Vorname"
+        android:ems="10"
+        android:id="@+id/firstName"
+        android:imeOptions="actionSend"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nachname"
+        android:ems="10"
+        android:id="@+id/lastName"
+        android:imeOptions="actionSend"
+        android:layout_below="@+id/firstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/tableNumber"
+        android:imeOptions="actionSend"
+        android:layout_below="@+id/lastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Tischnummer" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentWay"
+        android:layout_below="@+id/tableNumber"
+        android:layout_marginTop="33dp"
+        android:spinnerMode="dropdown"
+        android:layout_alignEnd="@+id/tableNumber"
+        android:layout_alignStart="@+id/tableNumber"
+        android:entries="@array/paymentMethods" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmButton"
+        android:id="@+id/confirmButton"
+        android:onClick="confirmButtonPressed"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/paymentWay"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
